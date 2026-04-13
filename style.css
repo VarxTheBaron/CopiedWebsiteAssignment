@@ -4,19 +4,29 @@
     box-sizing: border-box;
 }
 
+.navbar_header {
+    position: sticky;
+    width: 100vw;
+}
+
+.navbar_student {
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    padding: 0 12rem 0 25rem;
+    background-color: #0000000A;
+
+}
+
 .navbar_student_list {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    width: 100%;
-    height: 40px;
-    background-color: #0000000A;
     color:  #000000CC;
     list-style: none;
-    padding: 0 12rem 0 25rem;
     font-size: 0.8rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .navbar_student_list_item {
@@ -28,20 +38,24 @@
     cursor: pointer;
 }
 
+.navbar_main {
+    display: flex;
+    width: 100vw;
+    height: 44px;
+    background-color: #FFFFFFCC;
+
+}
 .navbar_main_list {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 44px;
-    background-color: #FFFFFFCC;
     color:  #000000CC;
     list-style: none;
     width: 55%;
     margin: 0 auto;
     font-size: 0.8rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .navbar_main_list_image {
@@ -51,18 +65,34 @@
 
 .navbar_main_list_item {
     padding: 0 6px 0 6px;
-    color: rgb(0,0,0,0.8);
-;
+    color: rgba(0,0,0,0.6)
+    ;
 }
 
 .navbar_main_list_item:hover {
-    color: rgb(0,0,0,1);
-    font-weight: bolder;
+    color: rgba(0,0,0,1)
 }
 
 a {
     list-style: none;
     text-decoration: none;
     color: #000000CC;
+}
 
+.above_the_fold {
+    height: 75vh;
+    width: 100%;
+    background-color: #0000000A;
+}
+.below_fold_1 {
+    margin-top: 10px;
+    height: 690px;
+    width: 100%;
+    background-color: #0000000A;
+}
+.below_fold_2 {
+    margin-top: 10px;
+    height: 690px;
+    width: 100%;
+    background-color: #0066CC;
 }
