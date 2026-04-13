@@ -5,8 +5,13 @@
 }
 
 .navbar_header {
-    position: sticky;
+    display: flex;
+    flex-direction: column;
+}
+.navbar_section {
+    position: fixed;
     width: 100vw;
+    display: block;
 }
 
 .navbar_student {
@@ -80,6 +85,7 @@ a {
 }
 
 .above_the_fold {
+    margin-top: 84px;
     height: 75vh;
     width: 100%;
     background-color: #0000000A;
