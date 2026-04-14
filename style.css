@@ -102,3 +102,25 @@ a {
     width: 100%;
     background-color: #0066CC;
 }
+
+#global-footer {
+    background: rgb(245, 245, 247);
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 12px;
+    font-weight: 400;
+    font-family:"SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#global-footer a {
+    color: rgba(0, 0, 0, 0.72);
+    text-decoration: underline;
+}
+
+.legal-disclaimer {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid black;
+}
+
+.legal-disclaimer li {
+    margin-bottom: 10px;
+}
