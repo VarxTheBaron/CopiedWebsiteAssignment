@@ -109,15 +109,20 @@ a {
     font-size: 12px;
     font-weight: 400;
     font-family:"SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    align-items: center;
 }
 
 .global-footer-content {
     padding: 0 20px 0;
+    min-width: 320px;
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .legal-disclaimer {
     padding: 0 0 10px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 
 .legal-disclaimer a {
@@ -133,11 +138,17 @@ a {
     list-style-type: none;
 }
 
-.directory-column {
+.directory-nav {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
 }
+
+/* .directory-column {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+} */
 
 .directory-column-section {
     padding-top: 24px;
@@ -161,5 +172,43 @@ a {
 }
 
 .directory-column-section-link:hover {
+    text-decoration: underline;
+}
+
+.global-footer-footer {
+    padding: 37px 0 10px 0;
+}
+
+.footer-shop-info {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-shop-info a {
+    color: rgb(0, 102, 204);
+    text-decoration: underline;
+}
+
+.footer-legal-info-legal-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-legal-info-legal-links li {
+    padding: 0 10px 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.footer-legal-info-legal-links li:last-child {
+    padding: 0 10px 0;
+    border-right: 0;
+}
+
+.footer-legal-info-legal-links li:first-child {
+    padding: 0 10px 0 0;
+}
+
+.footer-legal-info-legal-links-item:hover {
     text-decoration: underline;
 }
