@@ -183,6 +183,10 @@ a {
     padding: 37px 0 10px 0;
 }
 
+.footer-end {
+    display: flex;
+}
+
 .footer-shop-info {
     border-bottom: 1px solid rgba(0, 0, 0, 0.16);
     margin-bottom: 10px;
@@ -214,5 +218,13 @@ a {
 }
 
 .footer-legal-info-legal-links-item:hover {
+    text-decoration: underline;
+}
+
+.footer-regional-info {
+    margin-left: auto;
+}
+
+.footer-regional-info-link:hover {
     text-decoration: underline;
 }
