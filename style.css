@@ -111,9 +111,8 @@ a {
     font-family:"SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
-#global-footer a {
-    color: rgba(0, 0, 0, 0.72);
-    text-decoration: underline;
+.global-footer-content {
+    padding: 0 20px 0;
 }
 
 .legal-disclaimer {
@@ -121,6 +120,46 @@ a {
     border-bottom: 1px solid black;
 }
 
+.legal-disclaimer a {
+    color: rgba(0, 0, 0, 0.72);
+    text-decoration: underline;
+}
+
 .legal-disclaimer li {
     margin-bottom: 10px;
+}
+
+.legal-disclaimer ul {
+    list-style-type: none;
+}
+
+.directory-column {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.directory-column-section {
+    padding-top: 24px;
+}
+
+.directory-column-section-list {
+    list-style-type: none;
+}
+
+.directory-column-section-item {
+    padding-bottom: 10px;
+}
+
+.directory-column-section-title-text {
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.directory-column-section-link {
+    display:block;
+    width: fit-content;
+}
+
+.directory-column-section-link:hover {
+    text-decoration: underline;
 }
