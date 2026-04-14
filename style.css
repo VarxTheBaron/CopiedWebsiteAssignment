@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
 }
 
 .navbar_header {
     display: flex;
     flex-direction: column;
 }
+
 .navbar_section {
     position: fixed;
     width: 100vw;
@@ -19,8 +22,7 @@
     width: 100vw;
     height: 40px;
     padding: 0 12rem 0 25rem;
-    background-color: #0000000A;
-
+    background: rgba(245,245,245, 1);
 }
 
 .navbar_student_list {
@@ -31,7 +33,6 @@
     color:  #000000CC;
     list-style: none;
     font-size: 0.8rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .navbar_student_list_item {
@@ -47,9 +48,10 @@
     display: flex;
     width: 100vw;
     height: 44px;
-    background-color: #FFFFFFCC;
-
+    background: rgba(255, 255, 255, 0.98);
+    opacity: 99%;
 }
+
 .navbar_main_list {
     display: flex;
     flex-direction: row;
@@ -60,7 +62,6 @@
     width: 55%;
     margin: 0 auto;
     font-size: 0.8rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .navbar_main_list_image {
@@ -85,20 +86,228 @@ a {
 }
 
 .above_the_fold {
+    display: flex;
+    flex-direction: column;
     margin-top: 84px;
-    height: 75vh;
-    width: 100%;
+    height: 100%;
+    width: 100vw;
     background-color: #0000000A;
 }
+
 .below_fold_1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     margin-top: 10px;
-    height: 690px;
-    width: 100%;
+    height: 100%;
+    width: 100vw;
     background-color: #0000000A;
 }
+
 .below_fold_2 {
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
     height: 690px;
     width: 100%;
-    background-color: #0066CC;
+    background: linear-gradient(to bottom, #a1e8ff 0%,#f1f8fa 100%);;
+}
+
+.below_fold_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+    height: 100%;
+    padding: 0 10px 0 10px;
+}
+
+.section_title {
+    font-size: 3.5rem;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.section_subtitle {
+    font-size: 1.8rem;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.section_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem auto;
+    width: 100%;
+    width: 320px;
+    padding: 0 1rem;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    column-gap: 1rem;
+}
+
+.section_button_1 {
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    height: 45px;
+    border: none;
+    font-weight: 200;
+    background-color: #0071E3;
+    color: #FFF;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.section_button_1:hover {
+    background-color: #007af4;
+    cursor: pointer;
+}
+
+.section_button_2 {
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 200;
+    height: 45px;
+    border: 1px #0071E3 solid;
+    background: rgba(255,255,255, 0.3);
+    color: #0071E3;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.section_button_2:hover {
+    border: none;
+    background-color: #0071E3;
+    border: 1px #FFF solid;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.image_holder {
+    margin: 0 auto;
+    margin-top: 3rem;
+    }
+
+.section_image {
+    max-width: 500px;
+    height: 100%;
+    z-index: 5;
+}
+
+.section_cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 225px;
+}
+
+.section_text {
+    text-align: center;
+    height: 100px;
+}
+
+.grid_title {
+    font-size: 2rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.grid_subtitle {
+    font-size: 1.2rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    font-weight: 200;
+}
+
+.grid_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem auto;
+    width: 100%;
+    width: 320px;
+    padding: 0 1rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    text-align: center;
+    column-gap: 1rem;
+}
+
+.grid_button_1 {
+    padding: 0.5rem 0.9rem;
+    border-radius: 50px;
+    border: none;
+    background-color: #0071E3;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.grid_button_1:hover {
+    background-color: #007af4;
+    cursor: pointer;
+}
+
+.grid_button_2 {
+    padding: 0.5rem 0.9rem;
+    border-radius: 50px;
+    border: 1px #0071E3 solid;
+    background: rgba(255,255,255, 0.3);
+    color: #0071E3;
+    font-size: 1rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.grid_button_2:hover {
+    border: none;
+    background-color: #0071E3;
+    border: 1px #FFF solid;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.image_holder_grid {
+    margin: 0 auto;
+}
+
+.grid_image {
+    max-width: 500px;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    padding-bottom: 3rem;
+}
+
+.grid_cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.grid_text {
+    text-align: center;
+    height: 100px;
+}
+
+.grid_item_watch {
+    background-color: #0000000A;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers text + image within each cell */
+    text-align: center;
+    height: 100%;
 }
