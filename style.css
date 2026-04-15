@@ -5,8 +5,6 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-/* NavBar */
-
 .navbar-header {
     display: flex;
     flex-direction: column;
@@ -21,7 +19,7 @@
 .navbar-student {
     display: flex;
     width: 100vw;
-    height: 2.5rem;
+    height: 40px;
     padding: 0 12rem 0 25rem;
     background: rgba(245,245,245, 1);
 }
@@ -36,8 +34,8 @@
     font-size: 0.8rem;
 }
 
-.navbar-student-list-item {
-    padding: 0 0.375rem 0 0.375rem;
+.navbar-student_list-item {
+    padding: 0 6px 0 6px;
 }
 
 .navbar-student-list-item:hover {
@@ -48,7 +46,7 @@
 .navbar_main {
     display: flex;
     width: 100vw;
-    height: 2.75rem;
+    height: 44px;
     background: rgba(255, 255, 255, 0.98);
     opacity: 99%;
 }
@@ -71,7 +69,7 @@
 }
 
 .navbar_main_list_item {
-    padding: 0 0.375rem 0 0.375rem;
+    padding: 0 6px 0 6px;
     color: rgba(0,0,0,0.6)
     ;
 }
@@ -86,12 +84,10 @@ a {
     color: #000000CC;
 }
 
-/* Sections */
-
 .above_the_fold {
     display: flex;
     flex-direction: column;
-    margin-top: 5.25rem;
+    margin-top: 84px;
     height: 100%;
     width: 100vw;
     background-color: #0000000A;
@@ -101,7 +97,7 @@ a {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 0.625rem;
+    margin-top: 10px;
     height: 100%;
     width: 100vw;
     background-color: #0000000A;
@@ -110,8 +106,8 @@ a {
 .below_fold_2 {
     display: flex;
     flex-direction: column;
-    margin-top: 0.625rem;
-    height: 43.125rem;
+    margin-top: 10px;
+    height: 690px;
     width: 100%;
     background: linear-gradient(to bottom, #a1e8ff 0%,#f1f8fa 100%);;
 }
@@ -119,24 +115,24 @@ a {
 .below_fold_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 0.625rem;
-    row-gap: 0.625rem;
-    margin-top: 0.625rem;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
     height: 100%;
-    padding: 0 0.625rem 0 0.625rem;
+    padding: 0 10px 0 10px;
 }
 
 .section_title {
     font-size: 3.5rem;
-    height: 3.125rem;
-    line-height: 3.125rem;
+    height: 50px;
+    line-height: 50px;
     font-weight: 600;
 }
 
 .section_subtitle {
     font-size: 1.8rem;
-    height: 3.125rem;
-    line-height: 3.125rem;
+    height: 50px;
+    line-height: 50px;
     font-weight: 200;
 }
 
@@ -146,18 +142,18 @@ a {
     justify-content: center;
     margin: 0.5rem auto;
     width: 100%;
-    width: 20rem;
+    width: 320px;
     padding: 0 1rem;
-    height: 3.125rem;
-    line-height: 3.125rem;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     column-gap: 1rem;
 }
 
 .section_button_1 {
     padding: 0.8rem 1.5rem;
-    border-radius: 2.8125rem;
-    height: 2.8125rem;
+    border-radius: 50px;
+    height: 45px;
     border: none;
     font-weight: 200;
     background-color: #0071E3;
@@ -173,11 +169,11 @@ a {
 
 .section_button_2 {
     padding: 0.8rem 1.5rem;
-    border-radius: 2.8125rem;
+    border-radius: 50px;
     font-weight: 200;
-    height: 2.8125rem;
-    border: 0.0625rem #0071E3 solid;
-    background: rgba(255,255,255, 0.2);
+    height: 45px;
+    border: 1px #0071E3 solid;
+    background: rgba(255,255,255, 0.3);
     color: #0071E3;
     font-size: 1rem;
     cursor: pointer;
@@ -185,7 +181,7 @@ a {
 .section_button_2:hover {
     border: none;
     background-color: #0071E3;
-    border: 0.0625rem #00000000 solid;
+    border: 1px #FFF solid;
     color: #FFF;
     cursor: pointer;
 }
@@ -196,7 +192,7 @@ a {
     }
 
 .section_image {
-    max-width: 31.25rem;
+    max-width: 500px;
     height: 100%;
     z-index: 5;
 }
@@ -206,15 +202,13 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 14.0625rem;
+    height: 225px;
 }
 
 .section_text {
     text-align: center;
-    height: 20rem;
+    height: 100px;
 }
-
-/* Grid */
 
 .grid_title {
     font-size: 2rem;
@@ -240,9 +234,9 @@ a {
     justify-content: center;
     margin: 0.5rem auto;
     width: 100%;
-    width: 20rem;
+    width: 320px;
     padding: 0 1rem;
-    height: 3.25rem;
+    height: 2.25rem;
     line-height: 2.25rem;
     text-align: center;
     column-gap: 1rem;
@@ -250,7 +244,7 @@ a {
 
 .grid_button_1 {
     padding: 0.5rem 0.9rem;
-    border-radius: 3.125rem;
+    border-radius: 50px;
     border: none;
     background-color: #0071E3;
     color: #FFF;
@@ -266,9 +260,9 @@ a {
 
 .grid_button_2 {
     padding: 0.5rem 0.9rem;
-    border-radius: 3.125rem;
-    border: 0.0625rem #0071E3 solid;
-    background: rgba(255,255,255, 0);
+    border-radius: 50px;
+    border: 1px #0071E3 solid;
+    background: rgba(255,255,255, 0.3);
     color: #0071E3;
     font-size: 1rem;
     font-weight: 200;
@@ -278,7 +272,7 @@ a {
 .grid_button_2:hover {
     border: none;
     background-color: #0071E3;
-    border: 0.0625rem #00000000 solid;
+    border: 1px #FFF solid;
     color: #FFF;
     cursor: pointer;
 }
@@ -288,7 +282,7 @@ a {
 }
 
 .grid_image {
-    max-width: 25rem;
+    max-width: 500px;
     height: 100%;
     width: 100%;
     z-index: 5;
@@ -300,12 +294,12 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 12.5rem;
+    height: 200px;
 }
 
 .grid_text {
     text-align: center;
-    height: 6.25rem;
+    height: 100px;
 }
 
 .grid_item_light {
@@ -334,16 +328,16 @@ a {
 }
 
 .grid_image_short {
-    max-width: 25rem;
+    max-width: 500px;
     height: 100%;
     width: 100%;
     z-index: 5;
-    padding-top: 2.5rem;
+    padding: 2.5rem 0;
 }
 
 .grid_image_watch {
     width: 100%;
-    max-height: 25rem;
+    max-height: 400px;
     width: 100%;
     z-index: 5;
     padding-bottom: 2rem;
