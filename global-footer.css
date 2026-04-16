@@ -13,7 +13,7 @@
 .global-footer-content {
     padding: 0 20px 0;
     min-width: 375px;
-    max-width: 1044px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -67,12 +67,6 @@
     }
 }
 
-/* .directory-column {
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-} */
-
 .directory-column-section {
     margin-bottom: 10px;
 }
@@ -120,12 +114,14 @@
 }
 
 .global-footer-footer {
-    padding: 37px 0 10px 0;
+    padding-top: 37px;
+    padding-bottom: max(11px, env(safe-area-inset-bottom));
 }
 
 @media (max-width: 833px) {
     .global-footer-footer {
         padding-top: 17px;
+        padding-bottom: max(9px, env(safe-area-inset-bottom));
     }
 }
 
@@ -156,13 +152,11 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    /* row-gap: 10px; */
 }
 
 .footer-legal-info-legal-links-item {
     padding: 0 10px 0 0;
     border-right: 1px solid rgba(0, 0, 0, 0.16);
-    /* margin-right: 10px; */
     margin: 5px 10px 0 0;
     white-space: nowrap;
 }
