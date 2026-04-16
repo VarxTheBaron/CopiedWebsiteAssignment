@@ -281,7 +281,7 @@ a:hover {
 }
 
 .image_holder_grid {
-    margin-top: 0;
+    margin-top: 1rem;
 }
 
 .grid_image {
@@ -297,7 +297,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 160px;
+    height: 100%;
 }
 
 .grid_text {
@@ -312,6 +312,7 @@ a:hover {
     align-items: center; /* centers text + image within each cell */
     text-align: center;
     height: 100%;
+    padding: 2rem 0 0 0 ;
 }
 .grid_item_dark {
     background-color: #000;
@@ -321,6 +322,7 @@ a:hover {
     align-items: center; /* centers text + image within each cell */
     text-align: center;
     height: 100%;
+    padding: 2rem 0 0 0;
 }
 
 .grid_subtitle_short {
@@ -335,15 +337,14 @@ a:hover {
     height: 100%;
     width: 100%;
     z-index: 5;
-    padding: 2.5rem 0 0 0;
-}
+    padding: 4.5rem 0 0 0;}
 
 .grid_image_watch {
     width: 100%;
     max-height: 400px;
     width: 100%;
     z-index: 5;
-    padding: 3rem;
+    padding: 3rem 0 2rem 0;
 }
 
 @media (min-width: 64rem) {
@@ -374,7 +375,7 @@ a:hover {
     }
 
     .image_holder_grid {
-        margin-top: 1rem;
+        margin-top: 0;
     }
 
     .section_cta {
@@ -391,6 +392,9 @@ a:hover {
         line-height: 50px;
     }
 
+    .grid_cta {
+        height: 160px;
+    }
     .grid_title {
         font-size: 2rem;
         height: 2.25rem;
@@ -405,6 +409,14 @@ a:hover {
 
     .grid_image_watch {
         padding: 2rem;
+    }
+
+    .grid_item_light {
+        padding: 0;
+    }
+
+    .grid_item_dark {
+        padding: 0;
     }
 
 }
