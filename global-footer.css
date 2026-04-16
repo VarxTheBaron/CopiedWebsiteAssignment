@@ -72,17 +72,36 @@
     }
 }
 
+/* directory colum */
+
+.directory-column {
+    flex: 1 1 0;
+}
+
 /* directory column section */
 
-.directory-column-section {
-    margin-bottom: 10px;
+@media (max-width: 833px) {
+    .directory-column-section {
+        position: relative;
+    }
+}
+
+.directory-column-section~.directory-column-section {
+    padding-top: 24px;
+}
+
+@media (max-width: 833px) {
+    .directory-column-section~.directory-column-section {
+        padding-top: 0;
+    }
+    
 }
 
 /* directory section list */
 
 .directory-column-section-list {
     list-style-type: none;
-    position: relative;
+    margin-right: 20px;
 }
 
 @media (max-width: 833px) {
@@ -99,14 +118,24 @@
 
 .directory-column-section-item {
     padding-bottom: 10px;
+    color: rgba(0, 0, 0, 0.72);
 }
 
 .directory-column-section-title {
     padding-bottom: 10px;
+    color: rgba(0, 0, 0, 0.88);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+@media (max-width: 833px) {
+    .directory-column-section-title {
+        padding-top: 10px;
+    }
+
 }
 
 .directory-column-section-title-text {
-    color: rgba(0, 0, 0, 0.88);
 }
 
 @media (max-width: 833px) {
