@@ -107,32 +107,32 @@ a:hover {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    height: 690px;
+    height: 450px;
     width: 100%;
     background: linear-gradient(to bottom, #a1e8ff 0%,#f1f8fa 100%);;
 }
 
 .below_fold_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 10px;
     row-gap: 10px;
     margin-top: 10px;
     height: 100%;
-    padding: 0 10px 0 10px;
+    padding: 0;
 }
 
 .section_title {
-    font-size: 3.5rem;
-    height: 50px;
-    line-height: 50px;
-    font-weight: 600;
+    font-size: 2rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    font-weight: 400;
 }
 
 .section_subtitle {
-    font-size: 1.8rem;
-    height: 50px;
-    line-height: 50px;
+    height: 2.25rem;
+    font-size: 1.2rem;
+    line-height: 2.25rem;
     font-weight: 200;
 }
 
@@ -144,8 +144,8 @@ a:hover {
     width: 100%;
     width: 320px;
     padding: 0 1rem;
-    height: 50px;
-    line-height: 50px;
+    height: 2.75rem;
+    line-height: 2.25rem;
     text-align: center;
     column-gap: 1rem;
 }
@@ -178,6 +178,7 @@ a:hover {
     font-size: 1rem;
     cursor: pointer;
 }
+
 .section_button_2:hover {
     border: none;
     background-color: #0071E3;
@@ -188,26 +189,28 @@ a:hover {
 
 .image_holder {
     margin: 0 auto;
-    margin-top: 3rem;
-    }
-
-.section_image {
-    max-width: 500px;
-    height: 100%;
-    z-index: 5;
+    margin-top: 1.25rem;
 }
+
 
 .section_cta {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 225px;
+    height: 160px;
 }
 
 .section_text {
     text-align: center;
     height: 100px;
+}
+
+.section_image {
+    max-width: 18.75rem;
+    height: 100%;
+    z-index: 5;
+    margin-top: 2rem;
 }
 
 .grid_title {
@@ -278,7 +281,7 @@ a:hover {
 }
 
 .image_holder_grid {
-    margin: 0 auto;
+    margin-top: 0;
 }
 
 .grid_image {
@@ -332,7 +335,7 @@ a:hover {
     height: 100%;
     width: 100%;
     z-index: 5;
-    padding: 2.5rem 0;
+    padding: 3.5rem 0 1rem 0;
 }
 
 .grid_image_watch {
@@ -340,7 +343,7 @@ a:hover {
     max-height: 400px;
     width: 100%;
     z-index: 5;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 
@@ -475,18 +478,26 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 31.25rem) {
+@media (min-width: 64rem) {
     .below_fold_grid {
-        grid-template-columns: 1fr;
-        padding: 0;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0.625rem 0 0.625rem;
+    }
+
+    .below_fold_2 {
+        height: 690px;
     }
 
     .section_title {
-        font-size: 1.875rem;
+        font-size: 3.5rem;
+        height: 50px;
+        line-height: 50px;
     }
 
     .section_subtitle {
-        font-size: 0.9375rem;
+        font-size: 1.8rem;
+        height: 50px;
+        line-height: 50px;
     }
 
     .image_holder {
@@ -494,14 +505,28 @@ a:hover {
         margin-top: 1.25rem;
     }
 
-    .section_image {
-        max-width: 1.25rem;
-        height: 100%;
-        z-index: 5;
+    .image_holder_grid {
+        margin-top: 1rem;
     }
 
-    #global-footer {
-        margin-top: 0.625rem;
-        column-gap: 0.625rem;
+    .section_cta {
+        height: 225px;
+    }
+
+   .section_image {
+        max-width: 31.25rem;
+    }
+
+    .section_buttons {
+        width: 320px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .grid_title {
+        font-size: 2rem;
+        height: 2.25rem;
+        line-height: 2.25rem;
+        font-weight: 400;
     }
 }
