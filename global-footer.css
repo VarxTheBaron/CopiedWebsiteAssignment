@@ -126,10 +126,6 @@
     }
 }
 
-.directory-column-section-link:hover {
-    text-decoration: underline;
-}
-
 /* footer/end of the global footer*/
 
 .global-footer-footer {
@@ -185,22 +181,19 @@
     margin: 5px 10px 0 0;
 }
 
-.footer-legal-info-legal-links-item:hover {
-    text-decoration: underline;
-}
-
 .footer-legal-info-legal-links li:last-child {
     border-right: 0;
 }
 
 /* footer end region info */
-
-.footer-regional-info-link:hover {
-    text-decoration: underline;
-}
+/* only existing rule removed */
 
 /* shared */
 
 .text-nowrap {
     white-space: nowrap;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
 }
