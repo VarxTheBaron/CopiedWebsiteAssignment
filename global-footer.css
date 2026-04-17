@@ -8,10 +8,6 @@
     align-items: center;
 }
 
-#global-footer, #global-footer * {
-    font-family:"SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-
 .global-footer-content {
     padding: 0 20px 0;
     min-width: 375px;
