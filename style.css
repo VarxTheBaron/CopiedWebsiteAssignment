@@ -70,8 +70,9 @@
 
 .navbar_main {
     display: flex;
-    width: 100vw;
-    height: 44px;
+    align-items: center;
+    width: 100dvw;
+    height: 2.75rem;
     background: var(--bg-navbar);
     opacity: 99%;
 }
@@ -100,7 +101,7 @@
 }
 
 .navbar_main_list_item {
-    padding: 0 6px 0 6px;
+    padding: 0 0.375rem 0 0.375rem;
 }
 
 a {
@@ -504,10 +505,10 @@ a:hover {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        color:  #000000CC;
+        color: #000000CC;
         list-style: none;
-        min-width: 65%;
         margin: 0 auto;
+        min-width: 800px;
         font-size: 0.8rem;
     }
 
