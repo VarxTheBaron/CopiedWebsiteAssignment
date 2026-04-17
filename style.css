@@ -221,6 +221,8 @@ a:hover {
 .image_holder {
     margin: 0 auto;
     margin-top: 1.25rem;
+    max-width: 18.75rem;
+
 }
 
 
@@ -241,7 +243,6 @@ a:hover {
     max-width: 18.75rem;
     height: 100%;
     z-index: 5;
-    margin-top: 2rem;
 }
 
 .grid_title {
