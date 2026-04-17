@@ -5,8 +5,11 @@
     color: rgba(0, 0, 0, 0.56);
     font-size: 12px;
     font-weight: 400;
-    font-family:"SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
     align-items: center;
+}
+
+#global-footer, #global-footer * {
+    font-family:"SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .global-footer-content {
@@ -73,17 +76,36 @@
     }
 }
 
+/* directory colum */
+
+.directory-column {
+    flex: 1 1 0;
+}
+
 /* directory column section */
 
-.directory-column-section {
-    margin-bottom: 10px;
+/* @media (max-width: 833px) {
+    .directory-column-section {
+        position: relative;
+    }
+} */
+
+.directory-column-section~.directory-column-section {
+    padding-top: 24px;
+}
+
+@media (max-width: 833px) {
+    .directory-column-section~.directory-column-section {
+        padding-top: 0;
+    }
+    
 }
 
 /* directory section list */
 
 .directory-column-section-list {
     list-style-type: none;
-    position: relative;
+    margin-right: 20px;
 }
 
 @media (max-width: 833px) {
@@ -99,15 +121,29 @@
 /* directory list items */
 
 .directory-column-section-item {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.directory-column-section-item a {
+    /* required to override style.css */
+    color: rgba(0, 0, 0, 0.72); 
 }
 
 .directory-column-section-title {
     padding-bottom: 10px;
+    color: rgba(0, 0, 0, 0.88);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+@media (max-width: 833px) {
+    .directory-column-section-title {
+        padding-top: 10px;
+    }
+
 }
 
 .directory-column-section-title-text {
-    color: rgba(0, 0, 0, 0.88);
 }
 
 @media (max-width: 833px) {
@@ -117,7 +153,6 @@
 }
 
 .directory-column-section-link {
-    display:block;
     width: fit-content;
 }
 
@@ -141,25 +176,19 @@
     }
 }
 
-/* footer end */
-
-.footer-end {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 /* footer end shop */
 
 .footer-shop-info {
     border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 19px;
 }
 
 @media (max-width: 833px) {
     .footer-shop-info {
         border-bottom: 0;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
     }
 }
 
@@ -168,12 +197,31 @@
     text-decoration: underline;
 }
 
+/* footer end */
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-legal-info {
+    padding-bottom: 3px;
+}
+
+/* footer end copyright notice */
+
+.footer-legal-info-copyright {
+    margin: 5px 30px 0 0;
+}
+
 /* footer end legal links */
 
 .footer-legal-info-legal-links {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    margin: 5px 30px 0 0;
 }
 
 .footer-legal-info-legal-links-item {
