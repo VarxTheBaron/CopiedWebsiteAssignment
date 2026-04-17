@@ -85,7 +85,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color:  #000000CC;
+    color: #000000CC;
     list-style: none;
     width: 100%;
     margin: 0 auto;
@@ -96,6 +96,7 @@
 .navbar_main_list_image {
     width: 1rem;
     height: 1rem;
+    flex: 1;
 }
 
 .navbar_main_list_item {
@@ -117,7 +118,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-color: var(--bg-section);
     padding-top: 2rem;
 }
@@ -505,7 +506,7 @@ a:hover {
         justify-content: space-between;
         color:  #000000CC;
         list-style: none;
-        width: 55%;
+        min-width: 65%;
         margin: 0 auto;
         font-size: 0.8rem;
     }
