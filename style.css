@@ -332,12 +332,13 @@ a:hover {
     font-weight: 200;
 }
 
-.grid_image_short {
+.grid_image_pods {
     max-width: 300px;
     height: 100%;
     width: 100%;
     z-index: 5;
-    padding: 4.5rem 0 0 0;}
+    padding: 4.5rem 0 0 0;
+}
 
 .grid_image_watch {
     width: 100%;
@@ -345,6 +346,14 @@ a:hover {
     width: 100%;
     z-index: 5;
     padding: 3rem 0 2rem 0;
+}
+
+.grid_image_exchange {
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    padding: 4.5rem 0 0 0;
 }
 
 @media (min-width: 64rem) {
@@ -402,7 +411,7 @@ a:hover {
         font-weight: 400;
     }
 
-    .grid_image_short {
+    .grid_image_pods {
         max-width: 31.25rem;
         padding: 3.5rem 0 0 0;
     }
@@ -417,6 +426,11 @@ a:hover {
 
     .grid_item_dark {
         padding: 0;
+    }
+
+    .grid_image_exchange {
+        max-width: 360px;
+        padding: 5.5rem 0 0 0;
     }
 
 }
