@@ -213,14 +213,14 @@ a:hover {
 .section_button_2:hover {
     border: none;
     background-color: #0071E3;
-    border: 1px #FFF solid;
+    border: 1px #0000000A solid;
     color: #FFF;
     cursor: pointer;
 }
 
 .image_holder {
     margin: 0 auto;
-    margin-top: 1.25rem;
+    margin-top: 2.25rem;
 }
 
 
