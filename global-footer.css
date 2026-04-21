@@ -66,12 +66,6 @@
     font-weight: 400;
 }
 
-@media (max-width: 833px) {
-    .directory-nav {
-        flex-direction: column;
-    }
-}
-
 /* directory colum */
 
 .directory-column {
@@ -80,21 +74,8 @@
 
 /* directory column section */
 
-/* @media (max-width: 833px) {
-    .directory-column-section {
-        position: relative;
-    }
-} */
-
 .directory-column-section~.directory-column-section {
     padding-top: 24px;
-}
-
-@media (max-width: 833px) {
-    .directory-column-section~.directory-column-section {
-        padding-top: 0;
-    }
-    
 }
 
 /* directory section list */
@@ -102,16 +83,6 @@
 .directory-column-section-list {
     list-style-type: none;
     margin-right: 20px;
-}
-
-@media (max-width: 833px) {
-    .directory-column-section-list {
-        display: none;
-    }
-
-    .directory-column-section {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-    }
 }
 
 /* directory list items */
@@ -132,27 +103,8 @@
     font-size: 12px;
 }
 
-@media (max-width: 833px) {
-    .directory-column-section-title {
-        padding-top: 10px;
-    }
-
-}
-
-@media (max-width: 833px) {
-    .directory-column-section-title-text {
-    font-weight: 400;
-    }
-}
-
 .directory-column-section-link {
     width: fit-content;
-}
-
-@media (max-width: 833px) {
-    .directory-column-section-link {
-        width: auto;
-    }
 }
 
 /* footer/end of the global footer*/
@@ -162,27 +114,12 @@
     padding-bottom: max(11px, env(safe-area-inset-bottom));
 }
 
-@media (max-width: 833px) {
-    .global-footer-footer {
-        padding-top: 17px;
-        padding-bottom: max(9px, env(safe-area-inset-bottom));
-    }
-}
-
 /* footer end shop */
 
 .footer-shop-info {
     border-bottom: 1px solid rgba(0, 0, 0, 0.16);
     margin-bottom: 16px;
     padding-bottom: 19px;
-}
-
-@media (max-width: 833px) {
-    .footer-shop-info {
-        border-bottom: 0;
-        margin-bottom: 8px;
-        padding-bottom: 8px;
-    }
 }
 
 .footer-shop-info-link {
@@ -238,4 +175,37 @@
 
 .hover-underline:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 833px) {
+    .directory-nav {
+        flex-direction: column;
+    }
+    .directory-column-section~.directory-column-section {
+        padding-top: 0;
+    }
+    .directory-column-section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    }
+    .directory-column-section-list {
+        display: none;
+    }
+    .directory-column-section-title {
+        padding-top: 10px;
+    }
+    .directory-column-section-title-text {
+    font-weight: 400;
+    }
+    .directory-column-section-link {
+        width: auto;
+    }
+    .global-footer-footer {
+        padding-top: 17px;
+        padding-bottom: max(9px, env(safe-area-inset-bottom));
+    }
+    .footer-shop-info {
+        border-bottom: 0;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+    }
 }
