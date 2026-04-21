@@ -5,6 +5,14 @@
     --footer-text-color: rgba(0, 0, 0, 0.56);
     --footer-accent-blue: rgb(0, 102, 204);
     --border-color: rgba(0, 0, 0, 0.16);
+
+    --footer-max-width: 1024px;
+    --footer-min-width: 375px;
+    --footer-spacing-xs: 5px;
+    --footer-spacing-small: 10px;
+    --footer-spacing-large: 20px;
+    --footer-spacing-xl: 30px;
+    --footer-spacing-base: 11px;
 }
 
 /* disclaimer */
@@ -18,12 +26,12 @@
 }
 
 .global-footer-content {
-    padding: 0 20px 0;
+    padding: 0 var(--footer-spacing-large);
     min-width: 375px;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: var(--footer-spacing-large);
 }
 
 /* disclaimer energy flags */
@@ -34,7 +42,7 @@
 
 .energy-flags-list {
     display: flex;
-    gap: 20px;
+    gap: var(--footer-spacing-large);
 }
 
 .energy-flag-img {
@@ -46,21 +54,11 @@
 /* disclaimer legal info */
 
 .legal-disclaimer {
-    padding: 0 0 1px 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.legal-disclaimer a {
-    color: var(--footer-link-color);
-    text-decoration: underline;
+    padding-bottom: var(--footer-spacing-base);
 }
 
 .legal-disclaimer li {
-    margin-bottom: 10px;
-}
-
-.legal-disclaimer ul {
-    list-style-type: none;
+    margin-bottom: var(--footer-spacing-small);
 }
 
 /* directory nav */
@@ -69,9 +67,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    column-gap: 10px;
+    column-gap: var(--footer-spacing-small);
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: var(--footer-spacing-large);
     font-weight: 400;
 }
 
@@ -90,43 +88,36 @@
 /* directory section list */
 
 .directory-column-section-list {
-    list-style-type: none;
-    margin-right: 20px;
+    margin-right: var(--footer-spacing-large);
 }
 
 /* directory list items */
 
 .directory-column-section-item {
-    margin-bottom: 10px;
-}
-
-.directory-column-section-item a {
-    /* required to override style.css */
-    color: var(--footer-link-color); 
+    margin-bottom: var(--footer-spacing-small);
 }
 
 .directory-column-section-title {
-    padding-bottom: 10px;
+    padding-bottom: var(--footer-spacing-small);
     color: var(--footer-title-color);
     font-weight: 600;
     font-size: 12px;
 }
 
-.directory-column-section-link {
-    width: fit-content;
+.directory-column-section-link {    
+    color: var(--footer-link-color); 
 }
 
 /* footer/end of the global footer*/
 
 .global-footer-footer {
     padding-top: 37px;
-    padding-bottom: max(11px, env(safe-area-inset-bottom));
+    padding-bottom: var(--footer-spacing-base);
 }
 
 /* footer end shop */
 
 .footer-shop-info {
-    border-bottom: 1px solid var(--border-color);
     margin-bottom: 16px;
     padding-bottom: 19px;
 }
@@ -151,30 +142,26 @@
 /* footer end copyright notice */
 
 .footer-legal-info-copyright {
-    margin: 5px 30px 0 0;
+    margin: var(--footer-spacing-xs) var(--footer-spacing-xl) 0 0;
 }
 
 /* footer end legal links */
 
 .footer-legal-info-legal-links {
-    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    margin: 5px 30px 0 0;
+    margin: var(--footer-spacing-xs) var(--footer-spacing-xl) 0 0;
 }
 
 .footer-legal-info-legal-links-item {
-    padding: 0 10px 0 0;
+    padding-right: var(--footer-spacing-small);
     border-right: 1px solid var(--border-color);
-    margin: 5px 10px 0 0;
+    margin: var(--footer-spacing-xs) var(--footer-spacing-small) 0 0;
 }
 
 .footer-legal-info-legal-links li:last-child {
     border-right: 0;
 }
-
-/* footer end region info */
-/* only existing rule removed */
 
 /* shared */
 
@@ -182,9 +169,27 @@
     white-space: nowrap;
 }
 
+.link-color {
+    color: var(--footer-link-color);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .hover-underline:hover {
     text-decoration: underline;
 }
+
+.list-reset {
+    list-style-type: none;
+}
+
+.bottom-separator {
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Media queries smartphone + tablet */
 
 @media (max-width: 833px) {
     .directory-nav {
@@ -194,13 +199,13 @@
         padding-top: 0;
     }
     .directory-column-section {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    border-bottom: 1px solid var(--border-color);
     }
     .directory-column-section-list {
         display: none;
     }
     .directory-column-section-title {
-        padding-top: 10px;
+        padding-top: var(--footer-spacing-small);
     }
     .directory-column-section-title-text {
     font-weight: 400;
@@ -210,7 +215,7 @@
     }
     .global-footer-footer {
         padding-top: 17px;
-        padding-bottom: max(9px, env(safe-area-inset-bottom));
+        padding-bottom: 9px;
     }
     .footer-shop-info {
         border-bottom: 0;
