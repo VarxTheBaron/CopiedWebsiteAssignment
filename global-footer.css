@@ -1,8 +1,17 @@
+:root {
+    --footer-bg: rgb(245, 245, 247);
+    --footer-title-color: rgba(0, 0, 0, 0.88);
+    --footer-link-color: rgba(0, 0, 0, 0.72);
+    --footer-text-color: rgba(0, 0, 0, 0.56);
+    --footer-accent-blue: rgb(0, 102, 204);
+    --border-color: rgba(0, 0, 0, 0.16);
+}
+
 /* disclaimer */
 
 #global-footer {
-    background: rgb(245, 245, 247);
-    color: rgba(0, 0, 0, 0.56);
+    background: var(--footer-bg);
+    color: var(--footer-text-color);
     font-size: 12px;
     font-weight: 400;
     align-items: center;
@@ -38,11 +47,11 @@
 
 .legal-disclaimer {
     padding: 0 0 1px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .legal-disclaimer a {
-    color: rgba(0, 0, 0, 0.72);
+    color: var(--footer-link-color);
     text-decoration: underline;
 }
 
@@ -93,12 +102,12 @@
 
 .directory-column-section-item a {
     /* required to override style.css */
-    color: rgba(0, 0, 0, 0.72); 
+    color: var(--footer-link-color); 
 }
 
 .directory-column-section-title {
     padding-bottom: 10px;
-    color: rgba(0, 0, 0, 0.88);
+    color: var(--footer-title-color);
     font-weight: 600;
     font-size: 12px;
 }
@@ -117,13 +126,13 @@
 /* footer end shop */
 
 .footer-shop-info {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 16px;
     padding-bottom: 19px;
 }
 
 .footer-shop-info-link {
-    color: rgb(0, 102, 204);
+    color: var(--footer-accent-blue);
     text-decoration: underline;
 }
 
@@ -156,7 +165,7 @@
 
 .footer-legal-info-legal-links-item {
     padding: 0 10px 0 0;
-    border-right: 1px solid rgba(0, 0, 0, 0.16);
+    border-right: 1px solid var(--border-color);
     margin: 5px 10px 0 0;
 }
 
